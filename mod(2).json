@@ -1,0 +1,41 @@
+{
+    "geode": "5.10.1",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074"
+    },
+    "version": "v1.0.0",
+    "id": "yourname.morecheckpoints",
+    "name": "More Checkpoints",
+    "developer": "yourname",
+    "description": "Automatically places practice-mode checkpoints on a timer, so you don't have to spam the checkpoint key.",
+    "tags": ["gameplay", "practice", "utility"],
+    "settings": {
+        "checkpoint-interval": {
+            "name": "Checkpoint Interval (seconds)",
+            "description": "How often a new checkpoint is placed automatically while in practice mode.",
+            "type": "float",
+            "default": 3.0,
+            "min": 0.5,
+            "max": 15.0,
+            "control": {
+                "slider": true
+            }
+        },
+        "max-checkpoints": {
+            "name": "Max Stored Checkpoints",
+            "description": "Oldest checkpoints are removed once this limit is passed, so memory/backups don't grow forever. Set to 0 for unlimited.",
+            "type": "int",
+            "default": 100,
+            "min": 0,
+            "max": 500
+        },
+        "enabled": {
+            "name": "Enabled",
+            "description": "Turn automatic checkpoint placement on or off without uninstalling the mod.",
+            "type": "bool",
+            "default": true
+        }
+    }
+}
